@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let nilaiUjian = 80;
+    let nilaiAbsensi = 80;
+
+    let lulusUjian = nilaiUjian > 75
+    let lulusAbsensi = nilaiAbsensi > 75
+
+    let lulus = lulusUjian && lulusAbsensi
+
+    document.writeln("Nilai Ujian =" + nilaiUjian)
+    document.writeln("<br>")
+    document.writeln("Nilai Absensi =" + nilaiAbsensi)
+    document.writeln("<br>")
+    document.writeln("Maka : ")
+
+    if (lulus)
+    {
+      document.writeln("lulus")
+    }
+    else{
+      document.writeln("Tidak Lulus")
+    }
+  </script>
+</body>
+</html>
