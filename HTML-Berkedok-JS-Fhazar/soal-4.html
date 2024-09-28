@@ -7,7 +7,25 @@
 </head>
 <body>
   <script>
-    
+    let terdaftar = false
+    let memilikiEmail = false
+
+    AksesdiTerimaa = terdaftar && memilikiEmail
+
+    document.writeln("Pengguna = " + terdaftar)
+    document.writeln("<br>")
+    document.writeln("Email = " + memilikiEmail)
+    document.writeln("<br>")
+    document.writeln("Maka : ")
+    document.writeln("<br>")
+
+    if (AksesdiTerimaa)
+    {
+      document.writeln("Username dan Email Pengguna Terdaftar")
+    }
+    else{
+      document.writeln("Pendaftaran Di Perlukan")
+    }
   </script>
 </body>
 </html>
