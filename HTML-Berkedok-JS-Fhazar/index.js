@@ -11,4 +11,4 @@ function proyek(num) {
   }
 }
 
-proyek(9);
+proyek(19)
