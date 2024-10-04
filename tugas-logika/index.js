@@ -13,7 +13,7 @@ function login(username, password) {
 login('admin', 'secret2');
 
 // CARA LAIN
-// console.info('SOAL 1 = Akses Login');
+console.info('SOAL 1 = Akses Login');
 
 // const correctUsername = 'admin';
 // const correctPassword = 'secret';
@@ -97,8 +97,9 @@ console.info('');
 console.info('SOAL 8 = User memilih minimal dua framework');
 
 const frameworks = ['React', 'Vue']; // Pilih frameworknya
+const minFramework = 2;
 
-if (frameworks.length >= 2) {
+if (frameworks.length * 1 >= minFramework) {
   // User memilih minimal dua framework
   console.info('Framework sudah dipilih');
 } else {
@@ -110,8 +111,9 @@ console.info('');
 console.info('SOAL 9 = User memilih lebih dari satu bahasa');
 
 const languages = ['JavaScript', 'Python']; // Pilih bahasanya
+const minBahasa = 1;
 
-if (languages.length > 1) {
+if (languages.length * 1 > minBahasa) {
   // User memilih lebih dari satu bahasa
   console.info('Pilihan Ganda');
 } else {
@@ -127,17 +129,16 @@ console.info(
 );
 
 const isUserAdmin = false;
-const jumlahProject = 5;
+const jumlahProject = 4;
 
 if (isUserAdmin === true && jumlahProject >= 5) {
-  // User login sebagai admin dan telah mengikuti lebih dari 5 proyek
   console.info('User Admin dinyatakan TELAH mengikuti lebih 5 proyek');
 } else if (isUserAdmin === true && jumlahProject < 5) {
-  // User login sebagai admin dan belum mengikuti lebih dari 5 proyek
   console.info('User Admin dinyatakan BELUM mengikuti 5 proyek');
 } else if (isUserAdmin === false && jumlahProject < 5) {
-  // User login sebagai admin dan belum mengikuti lebih dari 5 proyek
-  console.info('User bukan Admin dinyatakan BELUM mengikuti lebih 5 proyek');
+  console.info(
+    'User bukan Admin dinyatakan BELUM mengikuti kurang dari 5 proyek'
+  );
 } else if (isUserAdmin === false && jumlahProject >= 5) {
-  console.info('User bukan Admin dan TELAH mengikuti lebih 5 proyek');
+  console.info('User bukan Admin dan TELAH mengikuti lebih kurang 5 proyek');
 }
